@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+	.a1{
+		font-size: 40px;
+		margin-top: 65px;
+		margin-right: 10px;
+	}
+	.a3{
+		display: inline-block;
+		padding-top: 5px;
+	}
+	.a2{
+		text-decoration: none;
+		font-size: 20px;
+		padding-right: 20px;
+		font-weight: bold;
+	}
+	.a2:hover{
+		background:cyan;
+		border-radius:50px;
+		box-shadow: -4px 6px 8px 10px cyan;
+	}
+</style>
+	{% load static %}
+</head>
+<body>
+<div class="row">
+	<div class="col-3"><img src="{% static 'images\2.jpg' %}" height="180" width="100%"></div>
+	<div class="col-6"><h1 style="margin-top: 60px; color:red;">Room Rental Services Lucknow</h1></div>
+	<div class="col-3">
+		<i class="a1 fab fa-facebook" style="color: blue;"></i> <i class="a1 fab fa-instagram" style="color: red;"></i> <i class="a1 far fa-envelope" style="color:lightgreen;"></i> <i class="a1 fab fa-google" style="color: pink;"></i>
+	</div>
+</div>
+<div class="row" style="background-color: pink;">
+	<div class="col-2"><h2>Welcome</h2></div>
+	<div class="col-10">
+		<ul>
+			<li class="a3" style="padding-left: 300px;"><a href="{% url 'user_home' %}" class="a2">Home</a></li>
+			<li class="a3"><a href="{% url 'view_room_user' %}" class="a2">View Room</a></li>
+			<li class="a3"><a href="" class="a2">My Booking</a></li>
+			<li class="a3"><a href="" class="a2">Feedback</a></li>
+			<li class="a3"><a href="" class="a2">Change Password</a></li>
+			<li class="a3"><a href="{% url 'Logout' %}" class="a2">Logout</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

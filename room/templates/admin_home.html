@@ -1,0 +1,24 @@
+{% include 'admin_navigation.html' %}
+
+{% load static %}
+<style>
+    .main{
+    border:2px solid blue;
+    height:450px;
+    background-image:url({% static 'images/11.jpg' %});
+    background-size:100% 100%;
+    animation: demo 20s infinite linear;
+    }
+    @keyframes demo{
+    20%{background-image:url({% static 'images/10.jpg' %});}
+    40%{background-image:url({% static 'images/9.jpg' %});}
+    60%{background-image:url({% static 'images/8.jpg' %});}
+    80%{background-image:url({% static 'images/7.jpg' %});}
+    100%{background-image:url({% static 'images/6.jpg' %});}
+    }
+</style>
+
+<div class="container-fluid main">
+
+</div>
+
