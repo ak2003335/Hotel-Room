@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="post" name="ajeet1" enctype="multipart/form-data" >
+  {% csrf_token %}
+    <label>First Name</label>
+    <input name="fname" type="text">
+    <label>Last Name</label>
+    <input name="lname" type="text">
+    <input value="Submit" type="submit">
+  </form>
+
+
+</body>
+</html>

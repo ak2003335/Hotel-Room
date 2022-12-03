@@ -1,0 +1,2 @@
+pip show django
+pip install django==3.1.3
